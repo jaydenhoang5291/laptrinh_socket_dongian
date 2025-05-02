@@ -19,3 +19,25 @@
   - Client: gõ 1 dòng văn bản -> gửi qua mạng cho server
   - Server: nhận văn bản -> đổi sang chữ in hoa -> gửi lại cho client
   - Client: nhận data từ server -> hiển thị kết quả
+
+
+## UDPClient
+1. Khai báo địa chỉ IP của server
+2. Khai báo cổng mà server đang nghe
+3. Tạo socket UDP
+4. Nhập tin nhắn
+5. Gửi tin nhắn cho server
+6. Chờ phản hồi
+7. In kết quả
+8. Đóng socket
+
+
+
+## UDPServer
+1. Tạo socket UDP
+2. Gán socket vào cổng 12000
+3. In thông báo sẵn sàng nhận dữ liệu
+4. Bắt đầu vòng lặp vô hạn
+5. Nhận tin nhắn từ Client
+6. Chuyển thành viết hoa
+7. Gửi kết quả về Client
